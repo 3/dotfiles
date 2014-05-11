@@ -1,0 +1,20 @@
+[user]
+  name = Allan Lacaba, Tristan Peralta
+  email = {lacaba.allan,tristanperalta}@gmail.com
+[core]
+  autocrlf = input
+  safecrlf = warn
+  editor = vim
+  excludesfile = ~/.gitignore
+[alias]
+  a = add
+  co = checkout
+  ci = commit
+  c = commit
+  st = status
+  br = branch
+  dc = diff --cached
+  amend = commit --amend
+  g = grep
+
+
