@@ -60,7 +60,7 @@ set smartcase
 set expandtab
 nnoremap <leader><space> :nohl<CR>
 
-set listchars=tab:▸\ ,eol:¬,trail:·,extends:#,nbsp:·
+set listchars=eol:¬,trail:·,extends:#,nbsp:·
 
 " Ctrl-s like windows
 map <C-s> :w<CR>
