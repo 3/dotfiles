@@ -14,7 +14,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'tpope/vim-endwise'
 Plugin 'spf13/vim-autoclose'
-
+Plugin 'fholgado/minibufexpl.vim'
+Plugin 'Lokaltog/vim-easymotion'
 
 let mapleader = "-"
 
@@ -66,9 +67,16 @@ set listchars=eol:¬,trail:·,extends:#,nbsp:·
 map <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>i
 
+noremap <C-Tab> :MBEbn<CR>
+noremap <C-S-Tab> :MBEbp<CR>
+noremap <C-l> :MBEbn<CR>
+noremap <C-h> :MBEbp<CR>
+
 let NERDTreeShowFiles=1
 let NERDTreeShowHidden=1
 let NERDTreeHighlightCursor=1
+
+let g:EasyMotion_keys="aoeusnth"
 
 noremap <leader>t :NERDTreeToggle<CR>
 
