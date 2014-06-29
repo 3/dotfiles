@@ -86,6 +86,7 @@ nnoremap ; :
 
 if has("autocmd")
     autocmd BufNewFile,BufRead *.html,*.erb set filetype=html.eruby
+    autocmd BufWritePre * :%s/\s\+$//e
 endif
 
 call vundle#end()
