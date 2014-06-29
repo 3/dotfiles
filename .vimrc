@@ -10,12 +10,16 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Lokaltog/vim-powerline'
-Plugin 'tpope/vim-endwise'
-Plugin 'spf13/vim-autoclose'
 Plugin 'fholgado/minibufexpl.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'spf13/vim-autoclose'
+Plugin 'junegunn/vim-easy-align'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'tpope/vim-rails'
 
 let mapleader = "-"
 
@@ -30,6 +34,7 @@ set smarttab
 set autoindent
 set copyindent
 set wrap
+set number
 
 set nobackup
 set noswapfile
@@ -66,6 +71,8 @@ set listchars=eol:¬,trail:·,extends:#,nbsp:·
 " Ctrl-s like windows
 map <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>i
+
+noremap <leader>d <Esc>:MBEbd<CR>
 
 noremap <C-Tab> :MBEbn<CR>
 noremap <C-S-Tab> :MBEbp<CR>
