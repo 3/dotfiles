@@ -18,3 +18,5 @@
   g = grep
 
 
+[color]
+	ui = true
